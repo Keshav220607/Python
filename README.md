@@ -21,7 +21,7 @@ if attempts > 0:
 while attempts > 0:
     guess = int(input(f"Make a guess: You have {attempts} attempts left: "))
 
-  if guess < secret_number:
+    if guess < secret_number:
         print("Raise your guess! Too Low.")
     elif guess > secret_number:
         print("Lower your guess! Too High.")
@@ -29,7 +29,7 @@ while attempts > 0:
         print(f"\033[97mCongratulations! You guessed the number in {score + 1} moves.\033[0m")
         break
 
-  attempts -= 1
+    attempts -= 1
     score += 1
 
 if attempts == 0:
